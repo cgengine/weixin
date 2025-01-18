@@ -1,10 +1,27 @@
 <view class="music-page">
-  <text class="title">音乐播放器</text>
+  <text class="title">抢凳子游戏</text>
+  
+  <view class="music-selector">
+    <text class="selector-label">选择背景音乐</text>
+    <view class="picker-container">
+      <picker 
+        bindchange="onMusicChange"
+        value="{{currentMusicIndex}}"
+        range="{{['bang', 'qifengle', '欢快音乐', '警告音乐', '轻松音乐']}}"
+      >
+        <view class="picker-view">
+          <text>当前选择：{{musicList[currentMusicIndex].name || '暂无音乐'}}</text>
+          <text class="picker-arrow">▼</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+
   <button 
     class="play-button {{isPlaying ? 'playing' : ''}}" 
     bindtap="togglePlay"
   >
-    {{isPlaying ? '暂停' : '播放'}}
+    {{isPlaying ? '暂停' : '开始'}}
   </button>
-  <text class="status-text">{{isPlaying ? '正在播放中...' : '点击按钮开始播放'}}</text>
+  <text class="status-text">{{isPlaying ? '游戏进行中...' : '点击开始游戏'}}</text>
 </view> 
