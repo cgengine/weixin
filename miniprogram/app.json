@@ -5,7 +5,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "音乐播放器",
+    "navigationBarTitleText": "抢凳子游戏",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

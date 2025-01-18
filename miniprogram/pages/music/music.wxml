@@ -1,10 +1,10 @@
 <view class="music-page">
-  <text class="title">音乐播放器</text>
+  <text class="title">抢凳子游戏</text>
   <button 
     class="play-button {{isPlaying ? 'playing' : ''}}" 
     bindtap="togglePlay"
   >
-    {{isPlaying ? '暂停' : '播放'}}
+    {{isPlaying ? '暂停' : '开始'}}
   </button>
-  <text class="status-text">{{isPlaying ? '正在播放中...' : '点击按钮开始播放'}}</text>
+  <text class="status-text">{{isPlaying ? '游戏进行中...' : '点击开始游戏'}}</text>
 </view> 

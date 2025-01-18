@@ -2,6 +2,7 @@
   "description": "项目配置文件",
   "miniprogramRoot": "miniprogram/",
   "compileType": "miniprogram",
+  "projectname": "抢凳子游戏",
   "setting": {
     "useCompilerPlugins": [
       "typescript",
